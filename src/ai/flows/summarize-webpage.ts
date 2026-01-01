@@ -28,11 +28,11 @@ export async function summarizeWebpage(input: SummarizeWebpageInput): Promise<Su
 
 const summarizeWebpagePrompt = ai.definePrompt({
   name: 'summarizeWebpagePrompt',
-  input: {schema: SummarizeWebpageInputSchema},
+  input: {schema: z.object({content: z.string()})},
   output: {schema: SummarizeWebpageOutputSchema},
   prompt: `Summarize the content of the following webpage:
 
-{{content}}`,
+{{{content}}}`,
 });
 
 const summarizeWebpageFlow = ai.defineFlow(
