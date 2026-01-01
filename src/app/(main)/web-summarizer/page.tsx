@@ -15,6 +15,7 @@ import { PageTitle } from '@/components/page-title';
 import { CopyableCode } from '@/components/copyable-code';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Label } from '@/components/ui/label';
 
 const formSchema = z.object({
   url: z.string().url({ message: 'Please enter a valid URL.' }),
