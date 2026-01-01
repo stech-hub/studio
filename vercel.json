@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "app/**/*.js": {
+      "includeFiles": "src/ai/flows/*.js"
+    }
+  }
+}
